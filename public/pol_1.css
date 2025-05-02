@@ -1,0 +1,394 @@
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+
+    body {
+        background-image: url("../images/img_for_slide_1/ell.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+        background-color: #141414;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    main{
+        max-width: 1200px;
+        margin: 100px auto 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Logo,.Top_menu {
+        margin-right: 25px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+
+    .Top_menu li {
+        margin-right: 25px;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+    }
+     @media screen and (max-width: 600px) {
+         .logo-texts{
+             font-size: 8vw !important;
+         }
+     }
+     @media screen and (max-width: 420px) {
+         .logo-texts{
+             font-size: 6vw !important;
+         }
+     }
+     @media screen and (max-width: 360px) {
+         .logo-texts{
+             font-size: 4vw !important;
+         }
+     }
+     @keyframes moveUpDown {
+         0%, 100% {
+             transform: translateY(0);
+         }
+         50% {
+             transform: translateY(-10px);
+         }
+     }
+
+     .guitar {
+         animation: moveUpDown 2s ease-in-out infinite;
+     }
+
+     .Top_menu a {
+        vertical-align: middle;
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        font-family: "FontName", sans-serif;
+    }
+     /* Медиазапрос для экранов шириной до 780 пикселей */
+     @media screen and (max-width: 780px) {
+         .Top_menu a {
+             font-size: 2vw; /* Уменьшите размер шрифта для маленьких экранов */
+         }
+     }
+
+
+    .Top_menu a:hover {
+        color: antiquewhite;
+
+    }
+
+    .Logo h1 {
+        font-family: "MV BOLI", cursive;
+        vertical-align: middle;
+        font-size: 50px;
+        color: white;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .bbuton{
+        padding: 12px 16px;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        color: white;
+
+        background-color: transparent;
+
+
+    }
+    .bbuton:hover{
+        background-color: grey;
+    }
+
+    .dropdown-content a:hover {
+        background-color: grey;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+        backdrop-filter: blur(5px);
+    }
+
+    footer {
+        width: 100%;
+        margin-bottom: 0;
+        background-color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .contact-panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .table-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh; /* Выравниваем по вертикали по высоте экрана */
+    }
+
+    table {
+        border-collapse: collapse; /* Убираем раздельные границы между ячейками */
+        width: 80%;
+        text-align: center; /* Выравниваем содержимое по центру */
+        border: 1px solid black;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 12px; /* Закруглить углы рамки на 10 пикселей */
+        color: white;
+    }
+
+    table, th, td {
+        border: 1px solid black; /* Добавляем границы для таблицы, ячеек и заголовков */
+        padding: 8px;
+        color: white;
+
+    }
+
+    table a {/*для ссылок*/
+        color: white;
+        text-decoration: none;
+    }
+
+    #p1 {
+        /*font-family: "COMIC SANS MS", cursive;*/
+        font-size: 18px;
+        line-height: 1.5; /*межстрочный интервал*/
+        text-align: justify; /* Выравниваем текст по ширине */
+        margin: 20px 0; /*внешние отступы сверху и снизу */
+        padding: 10px; /*внутренние отступы */
+        background-color: rgba(0, 0, 0, 0.2); /* Добавляем полупрозрачный фон */
+        color: white;
+        border-radius: 10px; /* закругленные углы */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень */
+    }
+    #p3 {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: justify;
+        margin: 20px 0;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #p2 {
+
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 20px auto;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #h2{
+        font-family: "BRUSH SCRIPT MT", cursive;
+        font-size: 500%;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+    .logo-texts {
+        animation: textGradient 5s infinite;
+    }
+    @keyframes textGradient {
+        0% {
+            color: wheat;
+        }
+        25% {
+            color: #A0522D;
+        }
+        50% {
+            color: wheat;
+        }
+        75% {
+            color: #A0522D;
+        }
+        100% {
+            color: wheat;
+        }
+    }
+
+    .site-image {
+        transition: transform 0.3s;
+        width: 100%;
+        max-width: 700px;
+        display: block;
+        margin: 0 auto;
+    }
+    .left-content,
+    .right-content,
+    .center-content {
+        color: black;
+        flex: 1;
+    }
+     @media screen and (max-width: 780px) {
+         .left-content,
+         .right-content,
+         .center-content {
+             font-size: 2vw; /* Уменьшите размер шрифта для маленьких экранов */
+         }
+     }
+
+    .left-content a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .right-content p {
+        margin: 0;
+
+    }
+
+    .center-content {
+        font-family: "MV BOLI", cursive;
+        font-size: 200%;
+    }
+
+     .contact-panel a:hover {
+        text-decoration: underline;
+        background-color: black;
+    }
+
+    #h2 {
+        font-family: "BRUSH SCRIPT MT", cursive;
+        font-size: 500%;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #content {
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .topic {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+    }
+
+    .topic h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .topic p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .topic ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    .topic li {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .article-image {
+        transition: transform 0.3s;
+        max-width: 50%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    img:hover {
+        transform: scale(1.2); /* Здесь 1.2 - это множитель масштаба при наведении. Вы можете изменить его на другое значение. */
+        transition: transform 0.3s; /* Это добавляет плавное анимирование при увеличении. Можете изменить время по своему усмотрению. */
+    }
+
+     /* Стили для модального окна */
+     .modal {
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+     }
+
+     .modal-content {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background-color: #fff; /* Цвет фона модального окна */
+         padding: 20px;
+     }
+
+     .close {
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         font-size: 20px;
+         cursor: pointer;
+     }

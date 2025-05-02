@@ -1,0 +1,35 @@
+@media print {
+    header, #gisd, .Logo, .Top_menu, .dropdown, .fixed-header, .article-image, .site-image, .contact-panel {
+        display: none !important;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: black !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        text-shadow: none;
+    }
+    body, p, a {
+        color: black !important;
+    }
+    body {
+        background-image: none;
+        background-color: transparent;
+    }
+    @page {
+        margin: 1cm;
+    }
+    @media print {
+        body::after {
+            content: "GGaMG";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            font-size: 48px;
+            color: rgba(255, 0, 0, 0.5); /* Цвет и прозрачность водяного знака */
+            transform: rotate(-45deg); /* Поворачиваем текст под углом */
+        }
+    }
+}

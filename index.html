@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        <link rel="stylesheet" href="public/pol_1.css">
+        <link rel="stylesheet" href="public/print.css" media="print">
+        <script src="script.js"></script>
+    </head>
+        <body>
+        <header class="fixed-header">
+            <div class="All_header_menu">
+                <div class="Logo">
+                    <a href="index.html">
+                        <h1 class="logo-texts">GGaMG</h1>
+                    </a>
+                </div>
+                <div class="Top_menu">
+                    <ul id="nav">
+                        <li><a href="article1.html">For first!</a></li>
+                        <li class="dropdown">
+                            <a href="#">Contact</a>
+                            <ul class="dropdown-content">
+                                <li><a href="https://t.me/kirkiruch" target="_blank">Telegram</a></li>
+                                <li><a href="https://www.instagram.com/kirkiruch/" target='_blank'>Instagram</a></li>
+                                <li><a href="mailto:kirillslyzhuck61@gmail.com" target="_blank">Mail</a></li>
+                                <li><button id="openFeedbackModal" class="bbuton">Leave Feedback</button></li>
+                            </ul>
+                        </li>
+                        <li><a href="article2.html">History</a></li>
+                        <li><a href="article3.html">Lessons</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+        <main>
+        <h2 id="h2">Welcome to GGaMG - Your Guitar Guide</h2>
+        <div id="content">
+            <div class="topic">
+                <h3>Discover the World of Guitars</h3>
+                <p>Welcome to GGaMG - your reliable guide to the world of guitars and music! If you've ever dreamed of learning to play the guitar, discovering more about different types of this amazing instrument, or simply sharing your passion for music, you've come to the right place.</p>
+            </div>
+            <div class="topic">
+                <h3>The Art of Guitar Playing</h3>
+                <p>The guitar is not just a musical instrument. It's art, passion, and a way of self-expression. On our website, you'll learn how to start your musical journey with the guitar, whether you're a beginner or an experienced guitarist. We provide valuable tips on choosing the right guitar, tuning it, and mastering the basics of playing.</p>
+            </div>
+            <div class="topic">
+                <h3>Explore Different Music Styles</h3>
+                <p>We offer a rich variety of information on different styles of guitar music, ranging from classical and rock to jazz and flamenco. Our articles and lessons will help you master chords, playing techniques, and even start composing your own musical pieces.</p>
+            </div>
+            <div class="topic">
+                <h3>Join Our Guitar Community</h3>
+                <p>We also take pride in our active community of musicians and guitar enthusiasts. Here, you can share your experiences, ask questions, get advice, and even find musical partners for collaborative play. With music, friendship, and the exchange of ideas, our website becomes a real musical gathering.</p>
+            </div>
+            <div class="topic">
+                <h3>Stay Informed and Inspired</h3>
+                <p>Our editors constantly keep an eye on the latest news and trends in the world of guitar music. You'll always be up, to date with hot releases, exciting events, and new technologies in music.</p>
+            </div>
+            <div class="topic">
+                <h3>Contact Us</h3>
+                <p>If you have questions, suggestions, or simply want to share your story, feel free to contact us through our provided contacts. We're always happy to hear from you and assist you on your musical journey.</p>
+            </div>
+            <div class="topic">
+                <h3>Your Musical Journey Begins Here</h3>
+                <p>GGaMG is more than just a website; it's a place where musical dreams come true. Let's embark on an exciting journey into the world of guitars and music together!</p>
+            </div>
+        </div>
+        </main>
+        <footer>
+            <div class="contact-panel">
+                <div class="left-content">
+                    <a href="mailto:kirillslyzhuck61@email.com" target="_blank">Email: kirillslyzhuck61@email.com</a>
+                </div>
+                <div class="center-content">
+                    GGaMG
+                </div>
+                <div class="right-content">
+                    <p>Phone: +4211119909</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Модальное окно -->
+        <div id="feedbackModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <form id="feedbackForm">
+                    <label for="feedbackName">Your name:</label>
+                    <input type="text" name="feedbackName" id="feedbackName" required />
+
+                    <label for="feedbackComment">Your feedback:</label>
+                    <textarea name="feedbackComment" id="feedbackComment" cols="50" rows="3" placeholder="Share your feedback here" required></textarea>
+
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+        </body>
+        </html>
